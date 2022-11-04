@@ -1,0 +1,58 @@
+
+@media (min-width: 600px) {
+	#headimg {
+		width: 500px;
+	}
+}
+
+#headimg {
+	max-width: 100% !important;
+    height: auto;
+}
+
+body, 
+.custom {
+   cursor: url("/cursor.png"), auto; 
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 7px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+border: 1px dashed pink;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #e5b7c2;  
+border-radius: 10px;
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #ffcdc1;  
+}
+
+
+/* unvisited link */
+a:link {
+  color: #ff7f50;
+}
+
+/* visited link */
+a:visited {
+  color: #cc0066;
+}
+
+/* mouse over link */
+a:hover {
+  color: #e0115f;
+}
+
+/* selected link */
+a:active {
+  color: #ff9872;
+}
