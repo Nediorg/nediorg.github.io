@@ -12,7 +12,8 @@
 
 body, 
 .custom {
-   cursor: url("/cursor.png"), auto; 
+   cursor: url("/cursor.png"), pointer ;
+   cursor: url("/point.png"), hand ;
 }
 
 /* Scrollbar styles */
