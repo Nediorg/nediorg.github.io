@@ -54,7 +54,8 @@ if ( url.includes("posts/") ) {
 //Write the Header HTML, a series of list items containing links.
 let headerHTML = '<ul> <li><a href="' + relativePath + '/index.html">Главная</a></li>' + 
 '<li><a href="' + relativePath + '/archive.html">Архив</a></li>' +
-'<li><a href="' + relativePath + '/about.html">О сайте</a></li> </ul>';
+'<li><a href="' + relativePath + '/about.html">О сайте</a></li> ' +
+'<li><a href="' + relativePath + '/whoami.html">Обо мне</a></li></ul>';
 
 //Write the Footer HTML, which has information about the blog.
 let footerHTML = "<hr><p>" + blogName + " создан <a href='" + authorLink + "'>" + authorName + "</a>, блог основан на <a href='https://zonelets.net/'>Zonelets</a></p>";

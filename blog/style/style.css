@@ -28,6 +28,7 @@
   
   /*This makes images shrink when their container becomes too small (responsive design)*/
   img {
+    vertical-align: middle;
     max-width: 100%;
     height: auto;
     margin-top: 0.5em;
