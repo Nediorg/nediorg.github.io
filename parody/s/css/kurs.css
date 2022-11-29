@@ -9,8 +9,8 @@
     margin: 0;
   }
   @font-face {
-    font-family: 'Inter';
-    src: url(https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap);
+      font-family: 'Inter-Regular';
+      src: url('../../../files/fonts/Inter-Regular.woff') format('woff')
   }
   .custom {
     cursor: url("/cursor.png"), pointer ;

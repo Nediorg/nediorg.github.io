@@ -1,7 +1,9 @@
 
-@media (min-width: 600px) {
+@media (min-width: 400px) {
 	#headimg {
-		width: 500px;
+		width: 300px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges
 	}
 }
 
@@ -12,48 +14,25 @@
 
 body, 
 .custom {
-   cursor: url("/cursor.png"), pointer ;
-   cursor: url("/point.png"), hand ;
+    cursor: url("cursor.png"), default ;
+   /* cursor: url("/point.png"), hand ; */
 }
-
-/* Scrollbar styles */
-::-webkit-scrollbar {
-width: 7px;
-height: 12px;
-}
-
-::-webkit-scrollbar-track {
-border: 1px dashed pink;
-border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-background: #e5b7c2;  
-border-radius: 10px;
-  
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #ffcdc1;  
-}
-
-
 /* unvisited link */
 a:link {
-  color: #ff7f50;
+  color: #506aff;
 }
 
 /* visited link */
 a:visited {
-  color: #cc0066;
+  color: #00a3cc;
 }
 
 /* mouse over link */
 a:hover {
-  color: #e0115f;
+  color: #11a5e0;
 }
 
 /* selected link */
 a:active {
-  color: #ff9872;
+  color: #72afff;
 }
