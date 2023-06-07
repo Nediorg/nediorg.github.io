@@ -151,10 +151,10 @@
   
   /* mouse over link */
   a:hover {
-    color: rgb(221, 213, 255);
+    text-decoration: none;
   }
   
   /* selected link */
   a:active {
-    color: rgb(169, 169, 255);
+    text-decoration: none;
   } 
