@@ -1,2 +1,2 @@
-# Website of Nediorg
-![image](https://github.com/Nediorg/nediorg.github.io/blob/main/github/photo.png?raw=true)
+# My beautiful site with a focus on speed and minimalism
+![image](./github/photo.png?raw=true)
