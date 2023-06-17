@@ -1,4 +1,3 @@
-
 @media (min-width: 400px) {
 	#headimg {
 		width: 300px;
@@ -6,7 +5,9 @@
     image-rendering: crisp-edges
 	}
 }
-
+body {
+  background-color: #020D0F;
+}
 #headimg {
 	max-width: 100% !important;
     height: auto;
@@ -38,7 +39,3 @@ a:active {
 img[alt] {
   color: #ebeeff;
 }
-body {
-  background-color: #020D0F;
-}
-
