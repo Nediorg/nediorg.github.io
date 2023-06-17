@@ -35,3 +35,10 @@ a:hover {
 a:active {
   color: #72afff;
 }
+img[alt] {
+  color: #ebeeff;
+}
+body {
+  background-color: #020D0F;
+}
+

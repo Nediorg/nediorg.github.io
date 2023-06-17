@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>О сайте</title>
-    <link rel="icon" href="/favicon.png" type="image/x-icon"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8"> 
-    <link href="css/kurs.css" rel="stylesheet" type="text/css" media="all">    
-    <link rel="icon" href="favicon.png" type="image/png">
-  </head>
-  <body>
-    <div id="container">
+<!--если ви листнете код дальш то ми вас посадим за влзом-->
+<head>
+  <title>MEGA KURS VALUT</title>
+  <link rel="icon" href="/favicon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link href="css/kurs.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+  <div id="container">
     <div id="header">MEGA KURS VALUT</div>
-    <div id="content">    
-    
+    <div id="content">
+
       <h1>Курс валюты NerealCoin</h1>
-      <h1><span id="b">Загрузка</span>,<span id="c"> падажите </span>USB</h1>
+      <h1><span id="b"><a href="/blog/nojs.html"><img src="/files/media/js.png" alt="нет js"></a></span> USB</h1>
       <p>Настоящий курс. Обещаю.</p><br>
-      <a href="../../index.html"><img src="../../ico/home.png"></a> <a href="index.html"><img src="../../ico/shcoin.png"></a>
-     <script>
-     fetch('https://www.random.org/integers/?num=1&min=324&max=98908&col=1&base=10&format=plain&rnd=new')
-      .then(res => res.text())
-      .then((textResponse) => {
-        document.querySelector('#b').textContent = textResponse;
-      })
-      fetch('https://www.random.org/integers/?num=1&min=11&max=98&col=1&base=10&format=plain&rnd=new')
-      .then(res => res.text())
-      .then((textResponse) => {
-        document.querySelector('#c').textContent = textResponse;
-      })
-    </script>
-  </body>
+      <a href="/index.html"><img src="/ico/home.png"></a> <a href="/index.html"><img
+          src="/ico/shcoin.png"></a>
+      <script>
+        let randomNum = (Math.floor(Math.random() * 98584) + 324).toFixed(2);
+        let formattedNum = new Intl.NumberFormat('ru-RU', { minimumFractionDigits: 2 }).format(randomNum);
+        console.log(formattedNum);
+        document.querySelector('#b').textContent = formattedNum;
+      </script>
+</body>
+
 </html>
