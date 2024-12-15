@@ -1,46 +1,34 @@
 <!DOCTYPE html>
-<!-- original: angel99.neocities.org -->
-<!-- helped: lunee -->
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html">
-    <link rel="icon" href="favicon.png" type="image/png">
-    <title>nediorg</title>
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    <meta property="og:title" content="nediorg">
-    <meta property="og:description" content="my beautiful site">
-    <meta property="og:url" content="https://nediorg.github.io/">
-    <meta property="og:image" content="/preview.png">
-    <meta property="og:image:width" content="968" />
-    <meta property="og:image:height" content="504" />
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html">
+  <title>nediorg</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
-    <br>
-    <center>
-        <a href="404.html"><img src="welcome.png" alt="welcome to the nediorg site" title="добро пожаловать!" id="headimg"></a>
-        <br>
-        <br><img src="ico/social.png" alt="----- Social -----">
-        <br>
-        <a href="https://nedigog.t.me"><img src="ico/tg.png" title="@ndrg0ff" alt="Telegram"></a>
-        <a href="https://youtube.com/@nediorg"><img src="ico/yt.png" title="@nediorg" alt="YouTube"></a>
-        <a rel="me" href="https://wetdry.world/@nediorg"><img src="ico/ms.png" title="@nediorg@wetdry.world" alt="Mastodon"></a>
-        <a href="https://matrix.to/#/@nediorg:matrix.org"><img src="ico/matrix.png" title="@nediorg:matrix.org" alt="Matrix"></a>
-        <br>
-        <img src="ico/other.png" alt="----- Other ----- ">
-        <br>
-        <a href="parody/n/index.html"><img src="ico/nowin.png" alt="nowindows.su (пародия)"></a>
-        <a href="https://github.com/Nediorg/nediorg.github.io"><img src="ico/hub.png" alt="Исходный код сайта"></a>
-        <a href="parody/s/index.html"><img src="ico/shcoin.png" alt="ShitCoin (пародия)"></a>
-        <br>
-        <a href="https://ipfs.io/ipns/k51qzi5uqu5dhze1twp40xe8pofcajgu3bciboz7piaww0t045tx7y8zfb4xn7"><img src="ico/ifon.png" alt="video iFon free"></a>
-        <br>
-        <img src="ico/blank.png" alt="------------------">
-        <br>
-        <a href="https://therezovbot.t.me"><img src="ico/rezov.png" alt="reZov (не та Z!) - полностью бесплатный бот" title="@therezovbot"></a>
-    </center>
+  <br>
+  <center>
+    <img src="./404.png" alt="404! страница не найдена!" title="404!" id="headimg" width="600">
+    <h1>Переход на новый сайт через <span id="n">3</span></h1>
+    <div class="link text" style="--color: var(--accent-color)"><a
+        href="https://nediorg.serv00.net/"><span>Перейти</span></a></div>
+  </center>
 </body>
 
 </html>
+<script>
+  let n = 3;
+  let interval = setInterval(() => {
+    n--;
+    document.getElementById("n").innerHTML = n;
+    if (n == 0) {
+      clearInterval(interval);
+      window.location = "https://nediorg.serv00.net/";
+    }
+  }
+    , 1000);
+</script>
